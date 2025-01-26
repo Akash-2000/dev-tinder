@@ -1,10 +1,15 @@
+import { RouterProvider } from 'react-router'
+import { createBrowserRouter } from 'react-router'
 import './App.css'
-import Navbar from './Navbar'
+import appRouter from './routes/routes'
+
 
 function App() {
 
   return (
-    <Navbar/>
+    <>
+    <RouterProvider router={appRouter}/>
+    </>
   )
 }
 
